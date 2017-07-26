@@ -3,10 +3,10 @@ function countLetters(input){
 
   for (var i = 0; i < input.length; i++){
       if(input.charAt(i) !== ' '){
-      if(result[input.charAt(i)] === undefined)
-        result[input.charAt(i)] = 1;
-      else
-        result[input.charAt(i)] += 1;
+        if(result[input.charAt(i)] === undefined)
+          result[input.charAt(i)] = 1;
+        else
+          result[input.charAt(i)] += 1;
     }
   }
   console.log(result);
